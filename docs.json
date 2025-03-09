@@ -20,10 +20,19 @@
             ]
           },
             {
-            "group": "Product Details",
+            "group": "Guide",
             "pages": [
               "essentials/wallet",
-              "essentials/code"
+              "essentials/swapping",
+              "essentials/launches",
+              "essentials/staking"
+            ]
+          },
+                      {
+            "group": "Details",
+            "pages": [
+              "essentials/rex",
+              "essentials/security"
             ]
           },
           {
