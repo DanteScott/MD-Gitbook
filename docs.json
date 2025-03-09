@@ -21,6 +21,13 @@
               "development"
             ]
           },
+            {
+            "group": "Product Details",
+            "pages": [
+              "essentials/wallet",
+              "essentials/code"
+            ]
+          },
           {
             "group": "Essentials",
             "pages": [
