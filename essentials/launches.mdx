@@ -1,59 +1,227 @@
 ---
 title: 'Token Launches'
-description: 'Add image, video, and other HTML elements'
+description: 'Learn how to launch your own Rune tokens on Meme Dealer with presales and liquidity provision'
 icon: 'rocket-launch'
 ---
 
-<img
-  style={{ borderRadius: '0.5rem' }}
-  src="https://mintlify-assets.b-cdn.net/bigbend.jpg"
-/>
+# Token Launches on Meme Dealer
 
-## Image
+Meme Dealer provides a comprehensive platform for launching Rune tokens on Bitcoin with built-in presale functionality and automatic liquidity provision. This guide will walk you through the entire token launch process from creation to going live on our AMM.
 
-### Using Markdown
+## What is Token Launching?
 
-The [markdown syntax](https://www.markdownguide.org/basic-syntax/#images) lets you add images using the following code
+Token launching on Meme Dealer allows you to:
 
-```md
-![title](/path/image.jpg)
-```
+- **Create your own Rune token** on the Bitcoin blockchain
+- **Run a presale** to raise initial funds and build community
+- **Automatically migrate to our AMM** for trading after presale completion
+- **Build a DAO** around your token with voting and governance features
 
-Note that the image file size must be less than 5MB. Otherwise, we recommend hosting on a service like [Cloudinary](https://cloudinary.com/) or [S3](https://aws.amazon.com/s3/). You can then use that URL and embed.
+<Note>
+All tokens launched on Meme Dealer use the Bitcoin Runes protocol, ensuring security and decentralization while maintaining compatibility with the Bitcoin ecosystem.
+</Note>
 
-### Using Embeds
+## How Token Launches Work
 
-To get more customizability with images, you can also use [embeds](/writing-content/embed) to add images
+### The Complete Launch Process
 
-```html
-<img height="200" src="/path/image.jpg" />
-```
+1. **Token Creation**: Define your token's properties and upload branding
+2. **Presale Phase**: Run a time-limited presale to raise initial capital
+3. **Automatic Migration**: If presale succeeds, your token automatically gets liquidity on our AMM
+4. **Trading Goes Live**: Your token becomes tradeable by the entire Meme Dealer community
 
-## Embeds and HTML elements
+### Presale Difficulty Levels
 
-<iframe
-  width="560"
-  height="315"
-  src="https://www.youtube.com/embed/4KzFe50RQkQ"
-  title="YouTube video player"
-  frameBorder="0"
-  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-  allowFullScreen
-  style={{ width: '100%', borderRadius: '0.5rem' }}
-></iframe>
+Meme Dealer offers four difficulty levels for your token presale, each with different caps and time limits:
 
-<br />
+- **Easy**: Lower presale cap, shorter duration - perfect for testing the waters
+- **Medium**: Moderate presale goals for established communities
+- **Hard**: Higher caps for ambitious projects with strong backing
+- **Nightmare**: Maximum difficulty for the most confident creators
 
 <Tip>
-
-Mintlify supports [HTML tags in Markdown](https://www.markdownguide.org/basic-syntax/#html). This is helpful if you prefer HTML tags to Markdown syntax, and lets you create documentation with infinite flexibility.
-
+Choose your difficulty level carefully! Higher difficulties offer more potential funding but require stronger community support to succeed.
 </Tip>
 
-### iFrames
+## Step-by-Step Launch Guide
 
-Loads another HTML page within the document. Most commonly used for embedding videos.
+### Step 1: Prepare Your Token
 
-```html
-<iframe src="https://www.youtube.com/embed/4KzFe50RQkQ"> </iframe>
-```
+Before launching, make sure you have:
+
+- ✅ **A unique token name and symbol**
+- ✅ **A compelling description** explaining your token's purpose
+- ✅ **High-quality token image** (under 5MB)
+- ✅ **Social media links** (Twitter, Telegram, website - optional but recommended)
+- ✅ **Sufficient Bitcoin** to cover launch fees
+
+### Step 2: Connect Your Wallet
+
+1. Go to the **"Launch Token"** page on Meme Dealer
+2. Connect your Bitcoin wallet (Unisat, Xverse, etc.)
+3. Ensure your wallet has enough Bitcoin for launch fees
+
+### Step 3: Fill Out the Launch Form
+
+#### Required Information:
+
+**Token Details:**
+- **Token Name**: Your token's display name (e.g., "My Awesome Token")
+- **Symbol**: Short ticker symbol (e.g., "MAT")
+- **Description**: Explain what your token represents and its purpose
+
+**Rune Selection:**
+- Choose an existing Rune from your wallet, or
+- Create a new Rune through our Rune Etch service
+
+**Presale Configuration:**
+- **Difficulty Level**: Select Easy, Medium, Hard, or Nightmare
+- **Launch Date**: Set when your presale should begin
+
+#### Optional Enhancements:
+
+<Accordion title="Social Media Links">
+- **Twitter**: Link to your project's Twitter account
+- **Telegram**: Invite link to your community chat
+- **Website**: Your project's official website
+
+These links help build trust and allow investors to research your project.
+</Accordion>
+
+<Accordion title="Advanced Options">
+- **Custom mint start date**: Schedule your presale for optimal timing
+- **Additional metadata**: Extra information about your token's properties
+</Accordion>
+
+### Step 4: Upload Token Image
+
+Your token image is crucial for recognition and branding:
+
+- **Supported formats**: PNG, JPG, GIF
+- **Maximum size**: 5MB
+- **Recommended dimensions**: 512x512 pixels or higher
+- **Best practices**: Use clear, recognizable imagery that represents your token
+
+### Step 5: Review and Submit
+
+1. **Double-check all information** - changes may not be possible after launch
+2. **Review the presale terms** and difficulty requirements
+3. **Confirm transaction** in your connected wallet
+4. **Wait for confirmation** - your token will appear with "Pending" status initially
+
+## Understanding Presale Mechanics
+
+### How Presales Work
+
+1. **Presale Period**: Users can invest Bitcoin during the set timeframe
+2. **Cap Requirements**: Each difficulty level has minimum investment caps
+3. **Success Criteria**: Presale must reach its cap within the time limit
+4. **Automatic Processing**: Successful presales automatically migrate to AMM trading
+
+### What Happens After Presale
+
+#### If Presale Succeeds:
+- ✅ Liquidity pool is automatically created
+- ✅ Your token goes live for trading
+- ✅ Investors receive their tokens
+- ✅ You receive the raised Bitcoin (minus platform fees)
+
+#### If Presale Fails:
+- ❌ All investor funds are automatically refunded
+- ❌ Token does not go live for trading
+- ❌ You can try launching again with different parameters
+
+<Warning>
+Failed presales are automatically processed by our system. All Bitcoin invested is returned to participants without any manual intervention required.
+</Warning>
+
+## Token Launch Fees
+
+Meme Dealer charges fees to cover:
+- **Rune creation costs** (if creating new Rune)
+- **Platform maintenance**
+- **Automatic liquidity provision**
+- **AMM integration services**
+
+Fee structures vary by difficulty level - higher difficulties may have different fee schedules.
+
+## Best Practices for Successful Launches
+
+### Before Launch
+
+1. **Build Community First**
+   - Create social media presence
+   - Engage with potential supporters
+   - Share your vision and roadmap
+
+2. **Choose Appropriate Difficulty**
+   - Start with Easy for first-time launches
+   - Consider your community size and commitment level
+   - Higher difficulties require stronger backing
+
+3. **Prepare Marketing Materials**
+   - Create compelling token description
+   - Design professional token image
+   - Prepare social media content for launch day
+
+### During Presale
+
+1. **Stay Active**
+   - Promote your presale on social media
+   - Engage with your community
+   - Answer questions about your project
+
+2. **Monitor Progress**
+   - Track presale progress on your token page
+   - Keep supporters updated on milestones
+   - Build excitement as you approach goals
+
+### After Launch
+
+1. **Support Your Token**
+   - Continue community engagement
+   - Consider creating a DAO for governance
+   - Explore [staking opportunities](/essentials/staking) for holders
+
+## Common Questions
+
+<Accordion title="Can I change my token details after launching?">
+Most token details cannot be changed once the presale begins. Make sure all information is correct before submitting your launch.
+</Accordion>
+
+<Accordion title="What happens if my presale doesn't reach its cap?">
+If your presale fails to reach its cap within the time limit, all invested Bitcoin is automatically refunded to participants. You can attempt to launch again with different parameters.
+</Accordion>
+
+<Accordion title="How long do presales last?">
+Presale duration depends on your chosen difficulty level. Each level has different time limits designed to match the funding goals.
+</Accordion>
+
+<Accordion title="Can I launch multiple tokens?">
+Yes, you can launch multiple tokens. However, each launch requires going through the complete process and paying associated fees.
+</Accordion>
+
+<Accordion title="Do I need to own a Rune to launch a token?">
+You can either use an existing Rune from your wallet or create a new one through our integrated [Rune Etch service](#). Creating new Runes incurs additional fees.
+</Accordion>
+
+## Getting Help
+
+If you encounter issues during your token launch:
+
+1. **Check our [FAQ section](/essentials/faq)** for common solutions
+2. **Join our community** on Telegram for peer support
+3. **Contact support** through official channels
+
+<Tip>
+Remember: Token launches are permanent actions on the Bitcoin blockchain. Take your time to ensure everything is correct before proceeding.
+</Tip>
+
+## What's Next?
+
+After successfully launching your token:
+- Explore [DAO creation and governance](/essentials/staking)
+- Learn about [providing liquidity](/essentials/swapping) for your token
+- Understand the [REX token ecosystem](/essentials/rex)
+
+Ready to launch your token? Head to the [Launch Token page](https://meme.dealer/launch) to get started!
