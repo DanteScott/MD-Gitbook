@@ -1,17 +1,17 @@
 ---
 title: Manage Wallet
-description: "Complete guide to connecting your wallet, managing balances, and handling deposits and withdrawals on RuneX."
+description: "Complete guide to connecting your wallet, managing balances, and handling deposits and withdrawals on Meme Dealer."
 ---
 
 # Manage Wallet
 
 ## Overview
 
-Your wallet is the central hub for managing your Bitcoin (BTC) and Rune tokens on RuneX. This guide will walk you through connecting your wallet, managing balances, and understanding the different types of balances in the platform.
+Your wallet is the central hub for managing your Bitcoin (BTC) and Rune tokens on Meme Dealer. This guide will walk you through connecting your wallet, managing balances, and understanding the different types of balances in the platform.
 
 ## Connecting Your Wallet
 
-RuneX supports two major Bitcoin wallets:
+Meme Dealer supports two major Bitcoin wallets:
 
 ### Supported Wallets
 
@@ -25,7 +25,7 @@ RuneX supports two major Bitcoin wallets:
    - Set up your wallet following their official guides
    - Ensure you're on the correct network (Mainnet/Testnet)
 
-2. **Connect to RuneX**
+2. **Connect to Meme Dealer**
    - Click the **"Connect Wallet"** button in the top navigation
    - Select your wallet type (Unisat or Xverse)
    - Approve the connection request in your wallet
@@ -36,30 +36,60 @@ RuneX supports two major Bitcoin wallets:
    - You'll see your balance summary in the main dashboard
 
 <Info>
-**Security Note:** RuneX uses message signing for authentication. You'll need to sign a unique message each time you connect to verify wallet ownership.
+**Security Note:** Meme Dealer uses message signing for authentication. You'll need to sign a unique message each time you connect to verify wallet ownership.
 </Info>
 
-## Understanding Your Balances
+## Holdings Page Overview
 
-RuneX displays three types of balances for better asset management:
+The Holdings page is your central dashboard for managing all your tokens across different locations. Navigate to the Holdings section to see a complete overview of your assets, including an interactive "Black Hole" visualization and comprehensive token management tools.
 
-### 1. Wallet Balance
-**Location:** External wallet (Unisat/Xverse)
-- Shows tokens currently held in your connected wallet
-- Used for deposits into the platform
-- Updated automatically when wallet contents change
+### Page Components
 
-### 2. Platform Balance  
-**Location:** Internal RuneX platform
-- Shows tokens deposited into RuneX for trading
-- Required for swapping, staking, and DAO participation
-- Protected by platform security measures
+#### Black Hole Visualization
+- **BTC Balance Display:** Shows your BTC balance held on the platform
+- **Runes Value:** Displays the total value of all your Rune tokens in BTC
+- **Interactive Animation:** Responsive particle effects that react to mouse movement
+- **Quick Actions:** Deposit and Withdraw buttons for easy access
 
-### 3. Staked Balance
-**Location:** Staking contracts
-- Shows tokens currently staked for rewards
-- Cannot be used for trading while staked
-- Earns rewards and provides voting power
+#### Token Holdings List
+The main interface is organized into three tabs for different balance types:
+
+### 1. Balance Tab
+**Platform Holdings:** Shows tokens deposited into Meme Dealer
+- Available for swapping, staking, and DAO participation
+- Each token displays amount held and available actions
+- **Actions Available:**
+  - **Swap:** Direct link to trading interface
+  - **DAO:** Access token-specific DAO features
+  - **View Details:** See comprehensive token information
+
+### 2. Vested Tab
+**Vesting Rewards:** Shows tokens you're earning through vesting schedules
+- Displays current claimable vesting rewards
+- Shows ongoing vesting progress
+- **Actions Available:**
+  - **Claim With Penalty:** Early withdrawal option (penalty applies)
+
+### 3. Staked Tab
+**Staked Holdings:** Shows tokens currently staked for rewards
+- Cannot be traded while staked
+- Earns rewards and provides voting power in DAOs
+- **Actions Available:**
+  - **Stake:** Add more tokens to existing stakes
+  - **Unstake:** Remove tokens from staking (penalties may apply)
+
+### Advanced Features
+
+#### Search and Filtering
+- **Token Search:** Find specific tokens by name
+- **Sort Options:** Order by amount, name, value, or recent activity
+- **Hide Inactive:** Filter out tokens with zero balance
+- **Statistics Badge:** Shows total number of tokens displayed
+
+#### Pagination and Performance
+- **Frontend Pagination:** Efficient loading with 10 tokens per page
+- **Real-time Updates:** Balances update automatically
+- **Responsive Design:** Optimized for desktop and mobile viewing
 
 ## Deposit Tokens
 
