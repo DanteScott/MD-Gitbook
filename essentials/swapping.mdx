@@ -1,59 +1,169 @@
 ---
 title: 'Swapping'
-description: 'Add image, video, and other HTML elements'
+description: 'Learn how to swap Bitcoin for Runes and Runes for Bitcoin on Meme Dealer'
 icon: 'repeat'
 ---
 
-<img
-  style={{ borderRadius: '0.5rem' }}
-  src="https://mintlify-assets.b-cdn.net/bigbend.jpg"
-/>
+# Swapping on Meme Dealer
 
-## Image
+The swap feature on Meme Dealer allows you to easily exchange Bitcoin (BTC) for Runes or Runes for Bitcoin through our automated market maker (AMM) system. This guide will walk you through everything you need to know about swapping.
 
-### Using Markdown
+## What is Swapping?
 
-The [markdown syntax](https://www.markdownguide.org/basic-syntax/#images) lets you add images using the following code
+Swapping is the process of exchanging one token for another using liquidity pools. On Meme Dealer, you can:
 
-```md
-![title](/path/image.jpg)
-```
+- **Swap Bitcoin for Runes**: Exchange your BTC for any Rune token available on the platform
+- **Swap Runes for Bitcoin**: Convert your Rune tokens back to BTC
+- **Access Real-time Pricing**: Get live exchange rates based on current pool liquidity
 
-Note that the image file size must be less than 5MB. Otherwise, we recommend hosting on a service like [Cloudinary](https://cloudinary.com/) or [S3](https://aws.amazon.com/s3/). You can then use that URL and embed.
+<Note>
+All swaps happen directly on-chain using Bitcoin's Runes protocol, ensuring security and decentralization.
+</Note>
 
-### Using Embeds
+## How to Make a Swap
 
-To get more customizability with images, you can also use [embeds](/writing-content/embed) to add images
+### Step 1: Connect Your Wallet
 
-```html
-<img height="200" src="/path/image.jpg" />
-```
+Before you can swap, you need to connect a compatible Bitcoin wallet:
 
-## Embeds and HTML elements
+1. Click **"Connect Wallet"** on the swap interface
+2. Choose your preferred wallet (Unisat, Xverse, etc.)
+3. Approve the connection in your wallet
 
-<iframe
-  width="560"
-  height="315"
-  src="https://www.youtube.com/embed/4KzFe50RQkQ"
-  title="YouTube video player"
-  frameBorder="0"
-  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-  allowFullScreen
-  style={{ width: '100%', borderRadius: '0.5rem' }}
-></iframe>
+### Step 2: Select Your Tokens
 
-<br />
+1. **Choose the "From" token**: Select what you want to swap (BTC or a Rune)
+2. **Choose the "To" token**: Select what you want to receive
+3. The interface will automatically show available trading pairs
 
 <Tip>
-
-Mintlify supports [HTML tags in Markdown](https://www.markdownguide.org/basic-syntax/#html). This is helpful if you prefer HTML tags to Markdown syntax, and lets you create documentation with infinite flexibility.
-
+You can only swap between BTC and Runes. Direct Rune-to-Rune swaps require two separate transactions through BTC.
 </Tip>
 
-### iFrames
+### Step 3: Enter Swap Amount
 
-Loads another HTML page within the document. Most commonly used for embedding videos.
+1. Enter the amount you want to swap in the "From" field
+2. The estimated amount you'll receive appears automatically in the "To" field
+3. Check your wallet balance to ensure you have sufficient funds
 
-```html
-<iframe src="https://www.youtube.com/embed/4KzFe50RQkQ"> </iframe>
-```
+### Step 4: Review Swap Details
+
+Before confirming, review:
+
+- **Exchange Rate**: How much you'll receive per unit
+- **Platform Fee**: Currently 1.5% of the swap amount
+- **Slippage Tolerance**: Price movement protection (adjustable 0.25% - 90%)
+- **Pool Information**: TVL (Total Value Locked) for both tokens
+
+### Step 5: Execute the Swap
+
+1. Click **"Swap"** to open the confirmation modal
+2. Review all transaction details one final time
+3. Click **"Confirm"** to proceed
+4. Sign the transaction in your wallet
+5. Wait for confirmation on the Bitcoin network
+
+## Understanding Slippage
+
+Slippage protects you from unfavorable price movements during your transaction.
+
+### What is Slippage?
+
+Slippage is the difference between the expected price and the actual execution price of your trade.
+
+### Setting Slippage Tolerance
+
+- **Low Slippage (0.25% - 2%)**: Better price protection, but trades may fail in volatile conditions
+- **Medium Slippage (2% - 5%)**: Balanced approach for most situations  
+- **High Slippage (5% - 90%)**: Higher chance of execution, but less price protection
+
+<Warning>
+Setting slippage too low may cause your transaction to fail. Setting it too high may result in receiving fewer tokens than expected.
+</Warning>
+
+## Fees and Costs
+
+### Platform Fees
+- **Swap Fee**: 1.5% of the transaction amount
+- **Network Fees**: Bitcoin transaction fees (varies with network congestion)
+
+### Minimum Amounts
+- **Bitcoin**: Minimum 546 sats (dust limit)
+- **Runes**: Minimum 1 unit of the smallest denomination
+
+## Pool Information
+
+Each trading pair has a liquidity pool that determines pricing:
+
+### TVL (Total Value Locked)
+- Shows the amount of BTC and Runes available for trading
+- Higher TVL usually means better pricing and lower slippage
+- You can view TVL for both sides of the pair
+
+### How Pricing Works
+- Prices are determined by the ratio of tokens in the pool
+- More demand for a token increases its price
+- The AMM automatically adjusts prices based on supply and demand
+
+## Common Issues and Solutions
+
+### Transaction Failed
+**Possible Causes:**
+- Insufficient balance for fees
+- Slippage set too low during volatile periods
+- Network congestion
+
+**Solutions:**
+- Check your balance includes network fees
+- Increase slippage tolerance
+- Wait for lower network congestion
+
+### "Amount Below Minimum" Error
+**Cause:** Your swap amount is below the minimum required
+
+**Solution:** Increase your swap amount above the minimum threshold
+
+### "Insufficient Balance" Error
+**Cause:** You don't have enough tokens to complete the swap
+
+**Solution:** Reduce your swap amount or add more funds to your wallet
+
+## Best Practices
+
+### For Optimal Swapping:
+
+1. **Check Pool Liquidity**: Higher TVL pools offer better rates
+2. **Monitor Market Conditions**: Swap during stable periods when possible
+3. **Set Appropriate Slippage**: Balance protection vs. execution probability
+4. **Account for Fees**: Include platform and network fees in your calculations
+5. **Verify Addresses**: Always double-check wallet connections
+
+### Timing Your Swaps:
+
+- **Low Network Congestion**: Lower Bitcoin transaction fees
+- **Stable Market Conditions**: Reduced price volatility
+- **High Pool Liquidity**: Better exchange rates
+
+## Next Steps
+
+After successfully swapping:
+
+- **Hold Your Tokens**: Keep them in your wallet for future trading
+- **Stake Your Tokens**: Earn rewards through our [staking system](/essentials/staking)
+- **Participate in DAOs**: Use your tokens for governance voting
+- **Explore Token Pages**: Learn more about specific Rune projects
+
+<Note>
+Remember that all swaps are final and cannot be reversed. Always double-check your transaction details before confirming.
+</Note>
+
+## Need Help?
+
+If you encounter any issues while swapping:
+
+1. Check our [FAQ section](/essentials/faq) for common solutions
+2. Verify your wallet connection and balance
+3. Ensure you're using a supported wallet
+4. Contact our support team through official channels
+
+Happy swapping on Meme Dealer!
