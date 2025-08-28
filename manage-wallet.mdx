@@ -1,0 +1,209 @@
+---
+title: Manage Wallet
+description: "Complete guide to connecting your wallet, managing balances, and handling deposits and withdrawals on RuneX."
+---
+
+# Manage Wallet
+
+## Overview
+
+Your wallet is the central hub for managing your Bitcoin (BTC) and Rune tokens on RuneX. This guide will walk you through connecting your wallet, managing balances, and understanding the different types of balances in the platform.
+
+## Connecting Your Wallet
+
+RuneX supports two major Bitcoin wallets:
+
+### Supported Wallets
+
+- **Unisat Wallet** - Browser extension wallet for Bitcoin and Runes
+- **Xverse Wallet** - Mobile and browser wallet with ordinals support
+
+### How to Connect
+
+1. **Install Your Preferred Wallet**
+   - Download and install either Unisat or Xverse wallet
+   - Set up your wallet following their official guides
+   - Ensure you're on the correct network (Mainnet/Testnet)
+
+2. **Connect to RuneX**
+   - Click the **"Connect Wallet"** button in the top navigation
+   - Select your wallet type (Unisat or Xverse)
+   - Approve the connection request in your wallet
+   - Sign the authentication message when prompted
+
+3. **Verify Connection**
+   - Your wallet address will appear in the navigation bar
+   - You'll see your balance summary in the main dashboard
+
+<Info>
+**Security Note:** RuneX uses message signing for authentication. You'll need to sign a unique message each time you connect to verify wallet ownership.
+</Info>
+
+## Understanding Your Balances
+
+RuneX displays three types of balances for better asset management:
+
+### 1. Wallet Balance
+**Location:** External wallet (Unisat/Xverse)
+- Shows tokens currently held in your connected wallet
+- Used for deposits into the platform
+- Updated automatically when wallet contents change
+
+### 2. Platform Balance  
+**Location:** Internal RuneX platform
+- Shows tokens deposited into RuneX for trading
+- Required for swapping, staking, and DAO participation
+- Protected by platform security measures
+
+### 3. Staked Balance
+**Location:** Staking contracts
+- Shows tokens currently staked for rewards
+- Cannot be used for trading while staked
+- Earns rewards and provides voting power
+
+## Deposit Tokens
+
+Move tokens from your wallet to the platform for trading:
+
+### Deposit Process
+
+1. **Access Deposit Modal**
+   - Click the **"+"** (plus) button next to any token
+   - Or navigate to the Balance section and click **"Deposit"**
+
+2. **Select Token and Amount**
+   - Choose the token you want to deposit
+   - Enter the amount (or click "Max" for full balance)
+   - Review the available balance in your wallet
+
+3. **Confirm Transaction**
+   - Click **"Deposit"** to proceed
+   - Approve the transaction in your wallet
+   - Wait for blockchain confirmation (usually 1-2 blocks)
+
+### Deposit Limits
+- **BTC Minimum:** No minimum deposit
+- **Rune Tokens:** Must deposit at least 1 unit of the smallest denomination
+- **Network Fees:** Paid from your wallet's BTC balance
+
+<Warning>
+**Important:** Deposits require network confirmation. Your platform balance will update automatically once the transaction is confirmed on the blockchain.
+</Warning>
+
+## Withdraw Tokens
+
+Move tokens from the platform back to your wallet:
+
+### Withdrawal Process
+
+1. **Access Withdrawal Modal**
+   - Click the **"-"** (minus) button next to any platform balance
+   - Or navigate to the Balance section and click **"Withdraw"**
+
+2. **Select Token and Amount**
+   - Choose the token you want to withdraw
+   - Enter the amount (cannot exceed your platform balance)
+   - Review any applicable fees
+
+3. **Confirm Withdrawal**
+   - Click **"Withdraw"** to submit the request
+   - Wait for processing (usually completed within 2 blocks)
+
+### Withdrawal Requirements
+
+#### BTC Withdrawals
+- **Minimum Amount:** 30,000 sats (0.0003 BTC)
+- **Fee Handling:** Network fees are deducted from withdrawal amount
+- **No Pending Rune Withdrawals:** Cannot withdraw BTC while Rune withdrawals are pending
+
+#### Rune Token Withdrawals  
+- **Minimum Amount:** 1 unit of the token's smallest denomination
+- **BTC Required:** Must have sufficient BTC in platform balance for network fees
+- **Fee Reserve:** Platform maintains a minimum 10,000 sats for fees
+
+<Note>
+**Rate Limiting:** Withdrawals are limited to one every 15 seconds to prevent abuse and ensure security.
+</Note>
+
+## Transaction History
+
+Monitor all your wallet activity:
+
+### Viewing Transactions
+
+1. **Access Transaction History**
+   - Navigate to the main dashboard
+   - Scroll to the "Transaction History" section
+   - Or click the transaction icon in the navigation
+
+2. **Transaction Types**
+   - **Deposits:** Tokens moved from wallet to platform
+   - **Withdrawals:** Tokens moved from platform to wallet  
+   - **Swaps:** Token exchanges within the platform
+   - **Stakes/Unstakes:** Staking-related transactions
+
+3. **Transaction Status**
+   - **Pending:** Waiting for blockchain confirmation
+   - **Confirmed:** Successfully processed
+   - **Failed:** Transaction unsuccessful (funds returned)
+
+### Transaction Details
+Each transaction shows:
+- Transaction ID (clickable to view on blockchain explorer)
+- Token amounts and types
+- Timestamp
+- Current status
+- Network fees (where applicable)
+
+## Security Best Practices
+
+### Wallet Security
+- Never share your private keys or seed phrases
+- Always verify transaction details before signing
+- Use official wallet extensions only
+- Keep your wallet software updated
+
+### Platform Security
+- Only connect wallets you control
+- Review all transaction requests carefully
+- Monitor your balances regularly
+- Report any suspicious activity immediately
+
+### Safe Trading Practices
+- Start with small amounts when learning
+- Understand slippage and price impact
+- Keep some BTC for network fees
+- Don't invest more than you can afford to lose
+
+## Troubleshooting
+
+### Common Issues
+
+**Wallet Won't Connect**
+- Refresh the page and try again
+- Ensure wallet extension is installed and unlocked
+- Check if you're on the correct network
+- Clear browser cache if problems persist
+
+**Balance Not Updating**
+- Wait for blockchain confirmation (1-2 blocks)
+- Refresh the page to update cached data
+- Check if transaction completed in your wallet
+
+**Insufficient Funds for Withdrawal**
+- Ensure you have enough BTC for network fees
+- Check minimum withdrawal amounts
+- Verify your platform balance is sufficient
+
+**Transaction Stuck**
+- Check blockchain explorer for transaction status
+- Contact support if transaction appears lost
+- Do not attempt duplicate transactions
+
+<Tip>
+**Need Help?** Join our Discord community or contact support through the platform if you experience any issues with wallet management.
+</Tip>
+
+---
+
+**Next Steps:** Once your wallet is connected and funded, you can start [trading tokens](./trading-guide), [providing liquidity](./liquidity-guide), or [participating in DAOs](./dao-guide).
