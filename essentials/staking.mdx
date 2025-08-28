@@ -1,59 +1,179 @@
 ---
-title: 'Staking/DAOs'
-description: 'Add image, video, and other HTML elements'
-icon: 'coin'
+title: 'Staking & DAOs'
+description: 'Learn how to stake tokens, participate in DAOs, and create proposals on Meme Dealer'
+icon: 'coins'
 ---
 
-<img
-  style={{ borderRadius: '0.5rem' }}
-  src="https://mintlify-assets.b-cdn.net/bigbend.jpg"
-/>
+## What is Staking?
 
-## Image
+Staking on Meme Dealer allows you to lock up your tokens for a period of time to gain voting power in DAOs (Decentralized Autonomous Organizations). When you stake tokens, you're contributing to the governance and decision-making process of the token's community.
 
-### Using Markdown
+### Key Benefits of Staking:
+- **Voting Power**: Each staked token = 1 vote in DAO proposals
+- **Community Governance**: Participate in important decisions about the token's future
+- **Reward Eligibility**: Potential benefits from forfeited tokens when others unstake early
 
-The [markdown syntax](https://www.markdownguide.org/basic-syntax/#images) lets you add images using the following code
+## How Staking Works
 
-```md
-![title](/path/image.jpg)
-```
+### Staking Process
 
-Note that the image file size must be less than 5MB. Otherwise, we recommend hosting on a service like [Cloudinary](https://cloudinary.com/) or [S3](https://aws.amazon.com/s3/). You can then use that URL and embed.
+1. **Choose Your Tokens**: Select any token you hold to stake
+2. **Set Duration**: Stakes are locked for **3 months** by default
+3. **Confirm Transaction**: Your tokens are moved from your available balance to staked balance
+4. **Gain Voting Power**: You can now vote on proposals for that token's DAO
 
-### Using Embeds
+<Note>
+You need at least **1 whole token** staked to participate in voting on proposals.
+</Note>
 
-To get more customizability with images, you can also use [embeds](/writing-content/embed) to add images
+### Early Unstaking Penalties
 
-```html
-<img height="200" src="/path/image.jpg" />
-```
+If you unstake before the 3-month period ends, you'll face penalties:
 
-## Embeds and HTML elements
+- **Penalty Calculation**: The earlier you unstake, the higher the penalty
+- **Forfeited Token Distribution**:
+  - 20% goes to REX token stakers
+  - 50% goes to other stakers of the same token
+  - 20% goes to the DAO treasury
+  - 10% is permanently burned
 
-<iframe
-  width="560"
-  height="315"
-  src="https://www.youtube.com/embed/4KzFe50RQkQ"
-  title="YouTube video player"
-  frameBorder="0"
-  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-  allowFullScreen
-  style={{ width: '100%', borderRadius: '0.5rem' }}
-></iframe>
+<Warning>
+Early unstaking can result in significant token loss. Plan your stakes carefully!
+</Warning>
 
-<br />
+### Adding to Existing Stakes
+
+If you already have tokens staked, you can add more tokens to your existing stake. The system uses **pro-rated expiration dates** to fairly calculate when your combined stake will expire.
+
+## Understanding DAOs
+
+Every token on Meme Dealer has its own DAO (Decentralized Autonomous Organization). DAOs are community-governed organizations where token holders make decisions collectively.
+
+### DAO Features
+
+Each DAO has:
+- **Treasury**: Holds BTC and the DAO's native token
+- **Governance Settings**: Rules for proposals and voting
+- **Proposals**: Community suggestions for changes or funding
+
+### DAO Configuration
+
+DAOs have several configurable parameters:
+- **Vote Requirement**: Minimum staked tokens needed to create proposals
+- **Proposal Length**: How long voting periods last (default 24 hours)
+- **Participation Requirement**: Minimum percentage of stakers that must vote
+- **Chat Requirement**: Minimum tokens needed to participate in discussions
+
+## Creating Proposals
+
+Stakers can create two types of proposals:
+
+### Configuration Proposals
+
+Change how the DAO operates:
+- Update DAO name or description
+- Modify voting requirements
+- Change proposal duration
+- Update participation thresholds
+- Modify token images/banners
+
+### Funding Proposals
+
+Request funds from the DAO treasury:
+- Request BTC or the DAO's native token
+- Specify recipient wallet address
+- Set funding amount and purpose
+- Must have sufficient treasury funds
+
+<Info>
+You can only have **one active proposal** per DAO at a time.
+</Info>
+
+## Voting on Proposals
+
+### Voting Requirements
+
+To vote, you must:
+1. Have at least 1 token staked in the relevant DAO
+2. Your stake must not be expired
+3. You haven't already voted on this proposal
+
+### Voting Options
+
+- **For**: Support the proposal
+- **Against**: Oppose the proposal  
+- **Abstain**: Participate without choosing a side
+
+### Voting Power
+
+Your voting power equals your total staked tokens. If you have 100 tokens staked, you have 100 votes.
+
+## Proposal Finalization
+
+Proposals are automatically finalized when their voting period expires:
+
+### Success Criteria
+
+A proposal passes if:
+1. **Participation**: Enough stakers participated in voting
+2. **Majority**: More "For" votes than "Against" votes
+3. **Treasury**: Sufficient funds available (for funding proposals)
+
+### Automatic Execution
+
+Successful proposals are automatically executed:
+- **Config changes**: Applied immediately to the DAO
+- **Funding transfers**: Tokens sent to recipient's wallet
+- **Failed proposals**: No changes made
+
+## Getting Started with Staking
+
+### Step 1: Navigate to Holdings
+Visit your Holdings page to see all your available tokens.
+
+### Step 2: Select Tokens to Stake
+Click the "Stake" button next to any token you want to stake.
+
+### Step 3: Enter Amount
+Choose how many tokens you want to stake (you can stake partial amounts).
+
+### Step 4: Confirm
+Review the 3-month lock period and confirm your stake.
+
+### Step 5: Participate in Governance
+Visit the DAO page for your staked token to view and vote on proposals.
+
+## Best Practices
 
 <Tip>
-
-Mintlify supports [HTML tags in Markdown](https://www.markdownguide.org/basic-syntax/#html). This is helpful if you prefer HTML tags to Markdown syntax, and lets you create documentation with infinite flexibility.
-
+**Plan Your Stakes**: Remember the 3-month lock period and early unstaking penalties.
 </Tip>
 
-### iFrames
+<Tip>
+**Stay Engaged**: Regularly check for new proposals to maximize your governance participation.
+</Tip>
 
-Loads another HTML page within the document. Most commonly used for embedding videos.
+<Tip>
+**Understand Proposals**: Read proposal descriptions carefully before voting.
+</Tip>
 
-```html
-<iframe src="https://www.youtube.com/embed/4KzFe50RQkQ"> </iframe>
-```
+<Warning>
+**Recipient Validation**: When creating funding proposals, ensure the recipient address is a registered wallet on Meme Dealer.
+</Warning>
+
+## Frequently Asked Questions
+
+**Q: Can I stake multiple different tokens?**
+A: Yes! You can stake any tokens you hold, and each gives you voting power in that token's DAO.
+
+**Q: What happens if I lose my voting power?**
+A: Voting power comes from staked tokens. If your stake expires or you unstake, you lose voting power until you stake again.
+
+**Q: Can I change my vote after submitting?**
+A: No, votes are final once submitted. Choose carefully!
+
+**Q: How do I know if a proposal passed?**
+A: Proposal status updates automatically when voting ends. Check the DAO page for results.
+
+**Q: What if a DAO treasury doesn't have enough funds?**
+A: Funding proposals will fail automatically if insufficient treasury funds are available.
