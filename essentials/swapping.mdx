@@ -1,7 +1,7 @@
 ---
-title: 'Swapping'
-description: 'Learn how to swap Bitcoin for Runes and Runes for Bitcoin on Meme Dealer'
-icon: 'repeat'
+title: "Swapping"
+description: "Learn how to swap Bitcoin for Runes and Runes for Bitcoin on Meme Dealer"
+icon: "repeat"
 ---
 
 # Swapping on Meme Dealer
@@ -17,7 +17,7 @@ Swapping is the process of exchanging one token for another using liquidity pool
 - **Access Real-time Pricing**: Get live exchange rates based on current pool liquidity
 
 <Note>
-All swaps happen directly on-chain using Bitcoin's Runes protocol, ensuring security and decentralization.
+  All swaps happen directly on-chain using Bitcoin's Runes protocol, ensuring security and decentralization.
 </Note>
 
 ## How to Make a Swap
@@ -37,7 +37,7 @@ Before you can swap, you need to connect a compatible Bitcoin wallet:
 3. The interface will automatically show available trading pairs
 
 <Tip>
-You can only swap between BTC and Runes. Direct Rune-to-Rune swaps require two separate transactions through BTC.
+  You can only swap between BTC and Runes. Direct Rune-to-Rune swaps require two separate transactions through BTC.
 </Tip>
 
 ### Step 3: Enter Swap Amount
@@ -61,7 +61,7 @@ Before confirming, review:
 2. Review all transaction details one final time
 3. Click **"Confirm"** to proceed
 4. Sign the transaction in your wallet
-5. Wait for confirmation on the Bitcoin network
+5. Wait for confirmation - You can track through the mini mempool on the swap page or the activity tab on the left.
 
 ## Understanding Slippage
 
@@ -74,20 +74,21 @@ Slippage is the difference between the expected price and the actual execution p
 ### Setting Slippage Tolerance
 
 - **Low Slippage (0.25% - 2%)**: Better price protection, but trades may fail in volatile conditions
-- **Medium Slippage (2% - 5%)**: Balanced approach for most situations  
+- **Medium Slippage (2% - 5%)**: Balanced approach for most situations
 - **High Slippage (5% - 90%)**: Higher chance of execution, but less price protection
 
 <Warning>
-Setting slippage too low may cause your transaction to fail. Setting it too high may result in receiving fewer tokens than expected.
+  Setting slippage too low may cause your transaction to fail. Setting it too high may result in receiving fewer tokens than expected.
 </Warning>
 
 ## Fees and Costs
 
 ### Platform Fees
-- **Swap Fee**: 1.5% of the transaction amount
-- **Network Fees**: Bitcoin transaction fees (varies with network congestion)
+
+- **Swap Fee**: 1.5% of the transaction amount - 0.5% of fee to LP - 0.25% to REX buybacks - Remaining 0.75% as revenue for Meme Dealer
 
 ### Minimum Amounts
+
 - **Bitcoin**: Minimum 546 sats (dust limit)
 - **Runes**: Minimum 1 unit of the smallest denomination
 
@@ -96,11 +97,13 @@ Setting slippage too low may cause your transaction to fail. Setting it too high
 Each trading pair has a liquidity pool that determines pricing:
 
 ### TVL (Total Value Locked)
+
 - Shows the amount of BTC and Runes available for trading
 - Higher TVL usually means better pricing and lower slippage
 - You can view TVL for both sides of the pair
 
 ### How Pricing Works
+
 - Prices are determined by the ratio of tokens in the pool
 - More demand for a token increases its price
 - The AMM automatically adjusts prices based on supply and demand
@@ -108,22 +111,27 @@ Each trading pair has a liquidity pool that determines pricing:
 ## Common Issues and Solutions
 
 ### Transaction Failed
+
 **Possible Causes:**
+
 - Insufficient balance for fees
 - Slippage set too low during volatile periods
 - Network congestion
 
 **Solutions:**
-- Check your balance includes network fees
+
+- Check your balance
 - Increase slippage tolerance
 - Wait for lower network congestion
 
 ### "Amount Below Minimum" Error
+
 **Cause:** Your swap amount is below the minimum required
 
 **Solution:** Increase your swap amount above the minimum threshold
 
 ### "Insufficient Balance" Error
+
 **Cause:** You don't have enough tokens to complete the swap
 
 **Solution:** Reduce your swap amount or add more funds to your wallet
@@ -154,16 +162,7 @@ After successfully swapping:
 - **Explore Token Pages**: Learn more about specific Rune projects
 
 <Note>
-Remember that all swaps are final and cannot be reversed. Always double-check your transaction details before confirming.
+  Remember that all swaps are final and cannot be reversed. Always double-check your transaction details before confirming.
 </Note>
 
-## Need Help?
-
-If you encounter any issues while swapping:
-
-1. Check our [FAQ section](/essentials/faq) for common solutions
-2. Verify your wallet connection and balance
-3. Ensure you're using a supported wallet
-4. Contact our support team through official channels
-
-Happy swapping on Meme Dealer!
+Happy swapping on Meme Dealer\!
