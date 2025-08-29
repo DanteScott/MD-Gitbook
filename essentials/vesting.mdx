@@ -1,26 +1,174 @@
 ---
 title: "Vesting"
-description: "Learn about token vesting schedules and how to claim your rewards on Meme Dealer"
+description: "Learn about token vesting schedules, daily rewards, and how to manage your vested tokens on Meme Dealer"
 icon: "hourglass"
 ---
 
 # Vesting on Meme Dealer
 
-## Coming Soon
-
-This page is under construction. Vesting functionality will be available soon on Meme Dealer.
+Vesting is a reward distribution system that gradually releases tokens to users over time. When you participate in certain activities on Meme Dealer, you may receive vesting schedules that provide daily token rewards, encouraging long-term engagement with the platform.
 
 ## What is Vesting?
 
-Vesting is a mechanism that allows tokens to be released gradually over time, ensuring long-term commitment and preventing immediate sell-offs that could harm token price stability.
+Vesting schedules are time-based reward systems that:
 
-## Features (Coming Soon)
-
-- **Gradual Token Release**: Tokens are released according to a predetermined schedule
-- **Investor Protection**: Prevents immediate dumps and promotes long-term holding
-- **Flexible Schedules**: Different vesting periods for different participant types
-- **Easy Claims**: Simple interface to claim your vested tokens when they become available
+- **Distribute Daily Rewards**: Automatically add tokens to your claimable balance every 24 hours
+- **Encourage Long-term Participation**: Reward consistent engagement with token projects
+- **Provide Predictable Income**: Give you a steady stream of token rewards over time
+- **Support Project Growth**: Help maintain token value through controlled distribution
 
 <Note>
-More information about vesting schedules and claiming processes will be added as this feature becomes available.
+  Vesting schedules are typically created when you participate in token presales, contribute to DAOs, or engage in other platform activities that qualify for long-term rewards.
+</Note>
+
+## How Vesting Works
+
+### Vesting Schedule Components
+
+Each vesting schedule contains:
+
+- **Token Name**: The specific token you'll receive rewards in
+- **Total Possible Rewards**: Maximum tokens you can earn from this schedule
+- **Current Vesting Rewards**: Tokens currently available to withdraw
+- **Daily Reward Amount**: Tokens added to your balance each day
+- **Status**: Active (earning rewards) or Inactive (completed/stopped)
+
+### Daily Reward Distribution
+
+The system automatically processes vesting rewards:
+
+1. **Daily Processing**: Rewards are distributed once every 24 hours
+2. **Automatic Addition**: Your `dailyRewardAmount` is added to `currentVestingRewards`
+3. **Balance Reduction**: The same amount is subtracted from `totalPossibleRewards`
+4. **Completion Check**: When `totalPossibleRewards` reaches zero, the schedule becomes inactive
+
+### Epoch-Based Halving
+
+Vesting rewards may decrease over time through epoch cycles:
+
+- **Epoch Duration**: 30 days in production (shorter in testing)
+- **Halving Events**: Daily rewards may be reduced or eliminated after each epoch
+- **Automatic Adjustment**: The system applies halving factors without user intervention
+
+<Warning>
+  Halving can significantly reduce your daily rewards. Check your vesting schedules regularly to understand current reward rates.
+</Warning>
+
+## Managing Your Vesting Schedules
+
+### Viewing Your Schedules
+
+To see your active vesting schedules:
+
+1. Navigate to your account dashboard
+2. Look for the "Vesting" or "Rewards" section
+3. View details including:
+   - Current claimable balance
+   - Daily reward amounts
+   - Remaining total rewards
+   - Schedule status
+
+### Claiming Vested Tokens
+
+You have two options for accessing your vested tokens:
+
+#### 1. Automatic Transfer (Recommended)
+
+When your vesting schedule completes naturally:
+- All remaining `currentVestingRewards` automatically transfer to your wallet
+- No penalties or fees apply
+- Full reward amount is preserved
+
+#### 2. Early Withdrawal (With Penalties)
+
+You can withdraw vested tokens before completion, but with consequences:
+
+**Penalty Structure:**
+- **20% to REX stakers**: Redistributed to REX token holders
+- **35% to token stakers**: Given to other stakers of the same token  
+- **25% to DAO**: Added to the token's DAO treasury
+- **20% burned**: Permanently removed from circulation
+
+**Proportional Reduction:**
+- Your future `dailyRewardAmount` is reduced proportionally
+- `totalPossibleRewards` decreases based on withdrawal amount
+- Early withdrawal may cause your schedule to become inactive
+
+<Warning>
+  Early withdrawal can result in losing 80% of your withdrawn amount to penalties. Only withdraw early if absolutely necessary.
+</Warning>
+
+## Best Practices
+
+### Maximizing Your Rewards
+
+<Tip>
+  **Let Schedules Complete**: Allow vesting schedules to finish naturally to avoid penalties and receive full rewards.
+</Tip>
+
+<Tip>
+  **Monitor Epochs**: Keep track of halving events that may reduce your daily rewards over time.
+</Tip>
+
+<Tip>
+  **Plan Withdrawals**: If you must withdraw early, calculate the penalty costs versus your immediate needs.
+</Tip>
+
+### Understanding Penalties
+
+Before making an early withdrawal:
+
+1. **Calculate True Cost**: Remember that 80% of withdrawn tokens are lost to penalties
+2. **Consider Timing**: Withdrawing closer to schedule completion minimizes total loss
+3. **Review Alternatives**: Consider if other funding sources might be available
+
+## Frequently Asked Questions
+
+**Q: How often are vesting rewards distributed?**
+A: Rewards are processed once every 24 hours automatically by the system.
+
+**Q: Can I have multiple vesting schedules?**
+A: Yes! You can have multiple active schedules for different tokens simultaneously.
+
+**Q: What happens if I don't claim my rewards?**
+A: Rewards accumulate in your `currentVestingRewards` balance until you withdraw them or the schedule completes.
+
+**Q: Do vesting schedules expire?**
+A: Schedules become inactive when `totalPossibleRewards` reaches zero, either through daily distributions or early withdrawals.
+
+**Q: Can I transfer my vesting schedule to another wallet?**
+A: No, vesting schedules are tied to your specific wallet address and cannot be transferred.
+
+**Q: How do epoch halvings affect my rewards?**
+A: Each epoch (typically 30 days), your `dailyRewardAmount` may be reduced by a predetermined factor, potentially reaching zero in later epochs.
+
+**Q: What happens to penalties from early withdrawals?**
+A: Penalty tokens are redistributed to REX stakers, token stakers, DAOs, and some are permanently burned to benefit the overall ecosystem.
+
+## Getting Started
+
+### Check for Existing Schedules
+
+1. Connect your wallet to Meme Dealer
+2. Navigate to your account dashboard
+3. Look for any active vesting schedules
+4. Review daily reward amounts and total remaining rewards
+
+### Participate in Activities That Create Schedules
+
+Vesting schedules may be created through:
+- Participating in token presales
+- Contributing to DAO treasuries
+- Engaging in platform governance
+- Other qualifying platform activities
+
+### Monitor Your Rewards
+
+- Check your vesting balance regularly
+- Plan around epoch halving events
+- Calculate optimal withdrawal timing if needed
+- Keep track of multiple token schedules
+
+<Note>
+  Vesting is designed to reward long-term participation in the Meme Dealer ecosystem. The longer you hold and engage, the more rewards you can earn!
 </Note>
