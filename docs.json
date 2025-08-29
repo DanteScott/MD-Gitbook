@@ -25,7 +25,8 @@
               "manage-wallet",
               "essentials/swapping",
               "essentials/launches",
-              "essentials/staking"
+              "essentials/staking",
+              "essentials/vesting"
             ]
           },
                       {
