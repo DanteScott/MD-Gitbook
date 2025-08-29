@@ -22,7 +22,7 @@
             {
             "group": "Guide",
             "pages": [
-              "essentials/wallet",
+              "manage-wallet",
               "essentials/swapping",
               "essentials/launches",
               "essentials/staking"
@@ -32,8 +32,7 @@
             "group": "Details",
             "pages": [
               "essentials/rex",
-              "essentials/security",
-              "essentials/faq"
+              "essentials/security"
             ]
           }
         ]
