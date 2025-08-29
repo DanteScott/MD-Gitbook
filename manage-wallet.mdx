@@ -1,5 +1,5 @@
 ---
-title: Manage Wallet
+title: "Manage Wallet"
 description: "Complete guide to connecting your wallet, managing balances, and handling deposits and withdrawals on Meme Dealer."
 ---
 
@@ -22,32 +22,33 @@ Meme Dealer supports two major Bitcoin wallets:
 
 1. **Install Your Preferred Wallet**
    - Download and install either Unisat or Xverse wallet
-   - Set up your wallet following their official guides
+   - Set up your wallet with BTC following their official guides
    - Ensure you're on the correct network (Mainnet/Testnet)
-
 2. **Connect to Meme Dealer**
    - Click the **"Connect Wallet"** button in the top navigation
    - Select your wallet type (Unisat or Xverse)
    - Approve the connection request in your wallet
    - Sign the authentication message when prompted
-
 3. **Verify Connection**
    - Your wallet address will appear in the navigation bar
    - You'll see your balance summary in the main dashboard
 
 <Info>
-**Security Note:** Meme Dealer uses message signing for authentication. You'll need to sign a unique message each time you connect to verify wallet ownership.
+  **Security Note:** Meme Dealer uses message signing for authentication. You'll need to sign a unique message each time you connect to verify wallet ownership.
 </Info>
 
 ## Holdings Page Overview
 
-The Holdings page is your central dashboard for managing all your tokens across different locations. Navigate to the Holdings section to see a complete overview of your assets, including an interactive "Black Hole" visualization and comprehensive token management tools.
+The Holdings page is your central dashboard for managing all your tokens across different locations. Navigate to the Holdings section to see a complete overview of your assets, and comprehensive token management tools.
 
 #### Token Holdings List
+
 The main interface is organized into three tabs for different balance types:
 
 ### 1. Balance Tab
+
 **Platform Holdings:** Shows tokens deposited into Meme Dealer
+
 - Available for swapping, staking, and DAO participation
 - Each token displays amount held and available actions
 - **Actions Available:**
@@ -56,14 +57,18 @@ The main interface is organized into three tabs for different balance types:
   - **View Details:** See comprehensive token information
 
 ### 2. Vested Tab
+
 **Vesting Rewards:** Shows tokens you're earning through vesting schedules
+
 - Displays current claimable vesting rewards
 - Shows ongoing vesting progress
 - **Actions Available:**
   - **Claim With Penalty:** Early withdrawal option (penalty applies)
 
 ### 3. Staked Tab
+
 **Staked Holdings:** Shows tokens currently staked for rewards
+
 - Cannot be traded while staked
 - Earns rewards and provides voting power in DAOs
 - **Actions Available:**
@@ -73,12 +78,10 @@ The main interface is organized into three tabs for different balance types:
 ### Advanced Features
 
 #### Search and Filtering
+
 - **Token Search:** Find specific tokens by name
 - **Sort Options:** Order by amount, name, value, or recent activity
 - **Hide Inactive:** Filter out tokens with zero balance
-
-
-
 
 ## Deposit Tokens
 
@@ -87,26 +90,24 @@ Move tokens from your wallet to the platform for trading:
 ### Deposit Process
 
 1. **Access Deposit Modal**
-   - Click the **"+"** (plus) button next to any token
-   - Or navigate to the Balance section and click **"Deposit"**
-
+   - Click the **"\+"** (plus) button next to any token
+   - Or navigate to the swap page and click **"Deposit"**
+   - You can also quickly deposit/withdraw any time by clicking your wallet address at the top right of the page.
 2. **Select Token and Amount**
    - Choose the token you want to deposit
-   - Enter the amount (or click "Max" for full balance)
-   - Review the available balance in your wallet
-
+   - Enter the amount 
 3. **Confirm Transaction**
    - Click **"Deposit"** to proceed
    - Approve the transaction in your wallet
-   - Wait for blockchain confirmation (usually 1-2 blocks)
+   - Wait for 2 blockchain confirmations for the balance to show up within Meme Dealer
 
 ### Deposit Limits
+
 - **BTC Minimum:** No minimum deposit
 - **Rune Tokens:** Must deposit at least 1 unit of the smallest denomination
-- **Network Fees:** Paid from your wallet's BTC balance
 
 <Warning>
-**Important:** Deposits require network confirmation. Your platform balance will update automatically once the transaction is confirmed on the blockchain.
+  **Important:** Deposits require 2 network confirmations. Your platform balance will update automatically once the transaction is confirmed on the blockchain.
 </Warning>
 
 ## Withdraw Tokens
@@ -117,13 +118,12 @@ Move tokens from the platform back to your wallet:
 
 1. **Access Withdrawal Modal**
    - Click the **"-"** (minus) button next to any platform balance
-   - Or navigate to the Balance section and click **"Withdraw"**
-
+   - Or navigate to the swap page and click **"Deposit"**
+   - You can also quickly deposit/withdraw any time by clicking your wallet address at the top right of the page.
 2. **Select Token and Amount**
    - Choose the token you want to withdraw
    - Enter the amount (cannot exceed your platform balance)
    - Review any applicable fees
-
 3. **Confirm Withdrawal**
    - Click **"Withdraw"** to submit the request
    - Wait for processing (usually completed within 2 blocks)
@@ -131,17 +131,19 @@ Move tokens from the platform back to your wallet:
 ### Withdrawal Requirements
 
 #### BTC Withdrawals
+
 - **Minimum Amount:** 30,000 sats (0.0003 BTC)
 - **Fee Handling:** Network fees are deducted from withdrawal amount
 - **No Pending Rune Withdrawals:** Cannot withdraw BTC while Rune withdrawals are pending
 
-#### Rune Token Withdrawals  
+#### Rune Token Withdrawals
+
 - **Minimum Amount:** 1 unit of the token's smallest denomination
 - **BTC Required:** Must have sufficient BTC in platform balance for network fees
 - **Fee Reserve:** Platform maintains a minimum 10,000 sats for fees
 
 <Note>
-**Rate Limiting:** Withdrawals are limited to one every 15 seconds to prevent abuse and ensure security.
+  **Rate Limiting:** Withdrawals are rate limited to prevent abuse and ensure security.
 </Note>
 
 ## Transaction History
@@ -151,23 +153,25 @@ Monitor all your wallet activity:
 ### Viewing Transactions
 
 1. **Access Transaction History**
-   - Navigate to the main dashboard
-   - Scroll to the "Transaction History" section
-   - Or click the transaction icon in the navigation
-
+   - Click the "Activity" button on the left side of the page.
+   - Or navigate to the main "Swap Page" dashboard
+   - Then click the spinning blocks - as an alternative to track your transactions
 2. **Transaction Types**
    - **Deposits:** Tokens moved from wallet to platform
-   - **Withdrawals:** Tokens moved from platform to wallet  
+   - **Withdrawals:** Tokens moved from platform to wallet
    - **Swaps:** Token exchanges within the platform
    - **Stakes/Unstakes:** Staking-related transactions
-
+   - **Presale Investments/Refunds:** Presale-related transactions
+   - **Unvesting:** Tokens that were unvested early - including penalty
 3. **Transaction Status**
-   - **Pending:** Waiting for blockchain confirmation
-   - **Confirmed:** Successfully processed
-   - **Failed:** Transaction unsuccessful (funds returned)
+   - **Pending (yellow):** Waiting for blockchain confirmation
+   - **Confirmed (green):** Successfully processed
+   - **Failed (red):** Transaction unsuccessful (funds returned)
 
 ### Transaction Details
-Each transaction shows:
+
+Each transaction can show:
+
 - Transaction ID (clickable to view on blockchain explorer)
 - Token amounts and types
 - Timestamp
@@ -177,18 +181,21 @@ Each transaction shows:
 ## Security Best Practices
 
 ### Wallet Security
+
 - Never share your private keys or seed phrases
 - Always verify transaction details before signing
 - Use official wallet extensions only
 - Keep your wallet software updated
 
 ### Platform Security
+
 - Only connect wallets you control
 - Review all transaction requests carefully
 - Monitor your balances regularly
 - Report any suspicious activity immediately
 
 ### Safe Trading Practices
+
 - Start with small amounts when learning
 - Understand slippage and price impact
 - Keep some BTC for network fees
@@ -199,28 +206,32 @@ Each transaction shows:
 ### Common Issues
 
 **Wallet Won't Connect**
+
 - Refresh the page and try again
 - Ensure wallet extension is installed and unlocked
 - Check if you're on the correct network
 - Clear browser cache if problems persist
 
 **Balance Not Updating**
+
 - Wait for blockchain confirmation (1-2 blocks)
 - Refresh the page to update cached data
 - Check if transaction completed in your wallet
 
 **Insufficient Funds for Withdrawal**
+
 - Ensure you have enough BTC for network fees
 - Check minimum withdrawal amounts
 - Verify your platform balance is sufficient
 
 **Transaction Stuck**
+
 - Check blockchain explorer for transaction status
 - Contact support if transaction appears lost
 - Do not attempt duplicate transactions
 
 <Tip>
-**Need Help?** Join our Discord community or contact support through the platform if you experience any issues with wallet management.
+  **Need Help?** Join our Discord community or contact support through the platform if you experience any issues with wallet management.
 </Tip>
 
 ---
