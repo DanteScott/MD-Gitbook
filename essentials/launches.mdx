@@ -74,11 +74,18 @@ A Rune is a fungible token standard built directly on Bitcoin using the Runes pr
 - You must own the **complete supply** of the Rune
 - The Rune must be in your connected Bitcoin wallet
 - **Minimum supply requirement**: Rune must have more than 50 million base units (accounting for divisibility)
+- **Maximum supply limit**: Rune cannot exceed 9e15 base units (9 quadrillion base units) to ensure precision in financial calculations
 - **Divisibility requirement**: Total supply must be divisible by 100
 - Meme Dealer will verify full ownership before allowing launch
 
 <Note>
   **Understanding Supply Units**: Like Bitcoin (21M coins = 2.1 quadrillion satoshis at 8 divisibility), your Rune's total base units = displayed tokens × 10^divisibility. For example, 1M tokens at 2 divisibility = 100M base units.
+  
+  **Maximum Supply Calculator**: To calculate if your Rune meets the platform limits:
+  - Base Units = Token Supply × 10^Divisibility
+  - Must be: 50,000,000 < Base Units ≤ 9,000,000,000,000,000 (9e15)
+  - Example: 90M tokens × 10^8 divisibility = 9e15 base units ✅ Maximum allowed
+  - Example: 100M tokens × 10^8 divisibility = 10e16 base units ❌ Exceeds limit
 </Note>
 
 #### Option 2: Etch Through Meme Dealer 🚀
@@ -91,7 +98,7 @@ Meme Dealer offers integrated Rune etching powered by OrdinalsBot, allowing you 
 
 - **Custom Names**: Choose any available name up to 28 characters (letters, spaces, and • symbols)
 - **Custom Symbols**: Select any single character or emoji as your Rune's symbol
-- **Fixed Supply**: All etched Runes have a fixed supply of 100 million base units (meets platform requirements)
+- **Fixed Supply**: All etched Runes have a fixed supply of 90 million tokens with 8 divisibility (9e15 base units - safely within JavaScript precision limits)
 - **Platform Compliance**: Automatically meets the \>50M base unit supply and divisibility requirements
 - **Immediate Integration**: Etched Runes are automatically available for token launches
 
@@ -315,7 +322,7 @@ A 5% fee is charged **only** to successful presales. If the sale does not migrat
 </Accordion>
 
 <Accordion title="Can I use a Rune I don't completely own?">
-  No, you must own 100% of the Rune's supply to launch a token. Additionally, the Rune must have more than 50 million base units (total supply × 10^divisibility) and the total supply must be divisible by 100. This ensures fair launches and prevents conflicts between multiple token creators using the same underlying Rune.
+  No, you must own 100% of the Rune's supply to launch a token. Additionally, the Rune must have more than 50 million base units and cannot exceed 9e15 base units (total supply × 10^divisibility). The total supply must also be divisible by 100. This ensures fair launches, prevents conflicts between multiple token creators, and maintains mathematical precision in our platform's financial calculations.
 </Accordion>
 
 <Accordion title="Why does my Rune need more than 50 million base units?">
